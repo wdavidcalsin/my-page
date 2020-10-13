@@ -1,18 +1,18 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-   faGithub,
-   faTwitter,
-   faMedium,
    faDev,
+   faGithub,
    faLinkedin,
+   faMedium,
+   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import {
    SectionFirst,
    SectionPresentation,
-   SectionVideo,
    SectionRedes,
    SectionRedesLink,
+   SectionVideo,
 } from './Styled1';
 
 function Section() {
@@ -21,7 +21,9 @@ function Section() {
          <div>
             <SectionPresentation>
                <div>
-                  <span>👋</span>
+                  <span role="img" aria-label="👋">
+                     👋
+                  </span>
                   <h1>Hey, I`m Willian David Calsin</h1>
                   <p>
                      I`m a frontend designer, freelance developer, code teacher,
