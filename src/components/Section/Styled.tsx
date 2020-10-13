@@ -1,52 +1,48 @@
 import styled from 'styled-components';
 
 export const SectionFirst = styled.section`
-
-
-        &>div{
-        }
+   & > div {
+   }
 `;
 
-
-
 export const SectionPresentation = styled.div`
-    &>div{
-        span{
-        }
+   & > div {
+      span {
+      }
 
-        h1{
-        }
+      h1 {
+      }
 
-        p{
-        }
-    }
-
+      p {
+      }
+   }
 `;
 
 export const SectionRedes = styled.div`
-    &>div{
-    }
-`; 
-
-interface sectionRedesLink {
-    borderColor: string;
-    backgroundColorHpver: string;
-    svgColor: string;
-}
-export const SectionRedesLink = styled.a`
-            border: 2px solid ${(props: sectionRedesLink) => props.borderColor};
-            color: ${(props: sectionRedesLink) => props.svgColor};
-
-            &:hover{
-                background-color: ${(props: sectionRedesLink) => props.backgroundColorHpver};
-            }
-            svg{
-            }
-            img{
-            }
+   & > div {
+   }
 `;
 
-export const SectionVideo= styled.div`
-    video{
-    }
+interface sectionRedesLink {
+   borderColor: string;
+   backgroundColorHpver: string;
+   svgColor: string;
+}
+export const SectionRedesLink = styled.a`
+   border: 2px solid ${(props: sectionRedesLink) => props.borderColor};
+   color: ${(props: sectionRedesLink) => props.svgColor};
+
+   &:hover {
+      background-color: ${(props: sectionRedesLink) =>
+         props.backgroundColorHpver};
+   }
+   svg {
+   }
+   img {
+   }
+`;
+
+export const SectionVideo = styled.div`
+   video {
+   }
 `;
