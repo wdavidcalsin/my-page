@@ -1,22 +1,24 @@
 import React from 'react';
-import Header from './components/Header/Header'
-import Section from './components/Section/Section'
-import styled from 'styled-components'
+import styled from 'styled-components';
 import './App.css';
+import Header from './components/Header/Header';
+import Section from './components/Section/Section';
 
 const BodyConttent = styled.div`
-  &>*, ::after, ::before {
-    box-sizing: inherit;
-  }
+   & > *,
+   ::after,
+   ::before {
+      box-sizing: inherit;
+   }
 `;
 
 function App() {
-  return (
+   return (
       <BodyConttent>
-        <Header />
-        <Section/>
+         <Header />
+         <Section />
       </BodyConttent>
-  );
+   );
 }
 
 export default App;
