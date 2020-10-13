@@ -7,7 +7,7 @@
       "eject": "react-scripts eject",
       "format": "prettier --write ./**/*.{tsx,ts,json,js}",
       "lint": "eslint src/**/*.{tsx,ts,js,jsx}",
-      "start": "react-scripts start",
+      "dev": "react-scripts start",
       "test": "react-scripts test"
    },
    "husky": {
