@@ -13,7 +13,7 @@ import {
    SectionRedes,
    SectionRedesLink,
    SectionVideo,
-} from './Styled';
+} from './Styled1';
 
 function Section() {
    return (
@@ -21,7 +21,9 @@ function Section() {
          <div>
             <SectionPresentation>
                <div>
-                  <span>👋</span>
+                  <span role="img" aria-label="👋">
+                     👋
+                  </span>
                   <h1>Hey, I`m Willian David Calsin</h1>
                   <p>
                      I`m a frontend designer, freelance developer, code teacher,
