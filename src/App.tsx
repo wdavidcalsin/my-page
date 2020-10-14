@@ -1,22 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
 import Header from './components/Header/Header';
 import Section from './components/Section/Section';
 
-const BodyConttent = styled.div`
-   & > *,
-   ::after,
-   ::before {
-      box-sizing: inherit;
-   }
-`;
-
 function App() {
    return (
-      <BodyConttent>
+      <div>
          <Header />
          <Section />
-      </BodyConttent>
+      </div>
    );
 }
 

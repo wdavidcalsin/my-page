@@ -1,16 +1,12 @@
-import {
-   faBars,
-   faInbox,
-   faMortarPestle,
-   faPodcast,
-} from '@fortawesome/free-solid-svg-icons';
+import { faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faInbox, faPodcast } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { NavHeader } from './elements';
+import './../../styles/components/Header.scss';
 
 function Header() {
    return (
-      <NavHeader>
+      <nav>
          <div className="container fx fx-rnw fx-jcsb fx-aic">
             <div className="brand">
                <a href="/">
@@ -45,11 +41,17 @@ function Header() {
             </div>
             <div className="actions">
                <a href="/">
-                  <FontAwesomeIcon icon={faMortarPestle} />
+                  <FontAwesomeIcon icon={faTwitter} />
+               </a>
+               <a href="/">
+                  <FontAwesomeIcon icon={faGithub} />
+               </a>
+               <a href="/">
+                  <FontAwesomeIcon icon={faDev} />
                </a>
             </div>
          </div>
-      </NavHeader>
+      </nav>
    );
 }
 

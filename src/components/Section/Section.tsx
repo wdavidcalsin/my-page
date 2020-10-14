@@ -7,19 +7,19 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import {
-   SectionFirst,
-   SectionPresentation,
-   SectionRedes,
-   SectionRedesLink,
-   SectionVideo,
-} from './Styled1';
+// import {
+//    SectionFirst,
+//    SectionPresentation,
+//    SectionRedes,
+//    SectionRedesLink,
+//    SectionVideo,
+// } from './Styled1';
 
 function Section() {
    return (
-      <SectionFirst>
+      <section>
          <div>
-            <SectionPresentation>
+            <div>
                <div>
                   <span role="img" aria-label="👋">
                      👋
@@ -29,62 +29,34 @@ function Section() {
                      I`m a frontend designer, freelance developer, code teacher,
                      book author and open source activist.
                   </p>
-                  <SectionRedes>
+                  <div>
                      <div>
-                        <SectionRedesLink
-                           borderColor="rgba(81, 81, 81, 0.1)"
-                           svgColor="black"
-                           backgroundColorHpver="black"
-                           href=""
-                        >
+                        <a>
                            <FontAwesomeIcon icon={faGithub} />
-                        </SectionRedesLink>
-                        <SectionRedesLink
-                           borderColor="rgba(81, 81, 81, 0.1)"
-                           svgColor="rgb(3, 169, 244)"
-                           backgroundColorHpver="rgb(3, 169, 244)"
-                           href=""
-                        >
+                        </a>
+                        <a>
                            <FontAwesomeIcon icon={faTwitter} />
-                        </SectionRedesLink>
-                        <SectionRedesLink
-                           borderColor="rgba(81, 81, 81, 0.1)"
-                           svgColor="black"
-                           backgroundColorHpver="black"
-                           href=""
-                        >
+                        </a>
+                        <a>
                            <FontAwesomeIcon icon={faMedium} />
-                        </SectionRedesLink>
-                        <SectionRedesLink
-                           borderColor="rgba(81, 81, 81, 0.1)"
-                           svgColor="black"
-                           backgroundColorHpver="black"
-                           href=""
-                        >
+                        </a>
+                        <a>
                            <FontAwesomeIcon icon={faDev} />
-                        </SectionRedesLink>
-                        <SectionRedesLink
-                           borderColor="rgba(81, 81, 81, 0.1)"
-                           svgColor="rgb(14, 115, 169)"
-                           backgroundColorHpver="rgb(14, 115, 169)"
-                           href=""
-                        >
+                        </a>
+                        <a>
                            <FontAwesomeIcon icon={faLinkedin} />
-                        </SectionRedesLink>
-                        {/* <a href="">
-                                    <img src="https://www.flaticon.es/svg/static/icons/svg/2111/2111543.svg" alt=""/>
-                                </a> */}
+                        </a>
                      </div>
-                  </SectionRedes>
+                  </div>
                </div>
-            </SectionPresentation>
-            <SectionVideo>
+            </div>
+            <div>
                <video muted loop autoPlay>
                   <source src="https://jgthms.com/static/css-in-44-minutes-1216-6485e8900f47f0bcb096c3dc756f7917.mp4" />
                </video>
-            </SectionVideo>
+            </div>
          </div>
-      </SectionFirst>
+      </section>
    );
 }
 
