@@ -7,19 +7,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-// import {
-//    SectionFirst,
-//    SectionPresentation,
-//    SectionRedes,
-//    SectionRedesLink,
-//    SectionVideo,
-// } from './Styled1';
 
 function Section() {
    return (
       <section>
-         <div>
-            <div>
+         <div className="container fx fx-rnw fx-aic">
+            <div className="presentation  ">
                <div>
                   <span role="img" aria-label="👋">
                      👋
@@ -29,28 +22,40 @@ function Section() {
                      I`m a frontend designer, freelance developer, code teacher,
                      book author and open source activist.
                   </p>
-                  <div>
+                  <div className="presentationIcons">
                      <div>
-                        <a>
-                           <FontAwesomeIcon icon={faGithub} />
+                        <a href="#">
+                           <FontAwesomeIcon
+                              className="github"
+                              icon={faGithub}
+                           />
                         </a>
-                        <a>
-                           <FontAwesomeIcon icon={faTwitter} />
+                        <a href="#">
+                           <FontAwesomeIcon
+                              className="twitter"
+                              icon={faTwitter}
+                           />
                         </a>
-                        <a>
-                           <FontAwesomeIcon icon={faMedium} />
+                        <a href="#">
+                           <FontAwesomeIcon
+                              className="medium"
+                              icon={faMedium}
+                           />
                         </a>
-                        <a>
-                           <FontAwesomeIcon icon={faDev} />
+                        <a href="#">
+                           <FontAwesomeIcon className="dev" icon={faDev} />
                         </a>
-                        <a>
-                           <FontAwesomeIcon icon={faLinkedin} />
+                        <a href="#">
+                           <FontAwesomeIcon
+                              className="linkedin"
+                              icon={faLinkedin}
+                           />
                         </a>
                      </div>
                   </div>
                </div>
             </div>
-            <div>
+            <div className="video">
                <video muted loop autoPlay>
                   <source src="https://jgthms.com/static/css-in-44-minutes-1216-6485e8900f47f0bcb096c3dc756f7917.mp4" />
                </video>

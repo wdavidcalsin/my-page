@@ -2,7 +2,7 @@ import { faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faInbox, faPodcast } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import './../../styles/components/Header.scss';
+// import './../../styles/components/Header/Header.scss';
 
 function Header() {
    return (
@@ -41,13 +41,13 @@ function Header() {
             </div>
             <div className="actions">
                <a href="/">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon className="twitter" icon={faTwitter} />
                </a>
                <a href="/">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon className="github" icon={faGithub} />
                </a>
                <a href="/">
-                  <FontAwesomeIcon icon={faDev} />
+                  <FontAwesomeIcon className="dev" icon={faDev} />
                </a>
             </div>
          </div>
