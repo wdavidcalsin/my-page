@@ -1,73 +1,72 @@
-nav{
-   box-shadow: 0 2px 0 0 #f5f5f5;
+.header {
    position: fixed;
    width: 100%;
    background-color: white;
    z-index: 10;
+   box-shadow: 0 0 30px -7px #eeeeee;
 
-   &>.container{
-      padding: 10px 0;
-      &>.brand{
-         a{
+   .container {
+      height: 80px;
+
+      .brand {
+         a {
             color: $textW;
             text-decoration: none;
-            img{
-               width:50px;
+            img {
+               width: 40px;
                height: auto;
             }
          }
       }
 
-      &>.nav-menu{
-         ul{
-            li{
-               &>a{
-                  padding: 10px 5px;
-                  margin: 0 20px;
-                  font-size: 20px;;
-                  color: $textW;
-                  position: relative;
-                  svg{
-                     display:none;
-                  }
-                  span{
-                  }
+      .nav-menu {
+         flex: 1;
+         ul li a {
+            padding: 5px;
+            margin: 0 5px;
+            color: $secondary;
+            position: relative;
+            transition: all 0.4s ease-in-out;
 
-                  &:after {    
-                     content: "";
-                     background: none repeat scroll 0 0 transparent;
-                     bottom: 0;
-                     display: block;
-                     height: 2px;
-                     left: 50%;
-                     position: absolute;
-                     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-                     width: 0;
-                     background: orange;
-                     
-                   }
-                   &:hover:after { 
-                     width: 100%; 
-                     left: 0; 
-                   }
+            &:after {
+               border-radius: 290486px;
+               content: '';
+               display: block;
+               left: 0;
+               position: absolute;
+               transform: scaleX(0);
+               transform-origin: center left;
+               transition-duration: 0.4s;
+               transition-property: transform;
+               width: 100%;
+               background-color: currentColor;
+               bottom: -4px;
+               height: 2px;
+               background-color: $primary;
+            }
+
+            &:hover {
+               color: $primary;
+
+               &:after {
+                  transform: scale(1);
                }
             }
          }
       }
 
-      &>.actions{
-         &>a{
-            font-size: 35px;
-            &>svg{
+      .actions {
+         a {
+            font-size: 27px;
+            svg {
                margin: 0 5px;
-               padding: 5px;
-               &.github{
+               &.github {
                   color: black;
                }
-               &.twitter{
+               &.twitter {
                   color: rgb(23, 111, 211);
                }
-               &.dev{
+               &.dev {
                   color: black;
                }
             }
