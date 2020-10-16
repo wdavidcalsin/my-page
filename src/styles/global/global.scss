@@ -1,0 +1,24 @@
+$textW: #414141;
+
+$theme: (text: $textW, background: #ffffff, border: #000000);
+$themeBlack: (text: white, background: #0b0a20, border:white);
+
+%colors {
+  color: map-get($theme, text);
+  background-color: map-get($theme, background);
+  border-color: map-get($theme, border);
+}
+
+%colors1 {
+  color: map-get($themeBlack, text);
+  background-color: map-get($themeBlack, background);
+  border-color: map-get($themeBlack, border);
+}
+
+.white {
+  @extend %colors;
+}
+
+.black {
+  @extend %colors1;
+}

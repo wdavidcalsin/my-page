@@ -1,16 +1,12 @@
-import {
-   faBars,
-   faInbox,
-   faMortarPestle,
-   faPodcast,
-} from '@fortawesome/free-solid-svg-icons';
+import { faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faInbox, faPodcast } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { NavHeader } from './elements';
+// import './../../styles/components/Header/Header.scss';
 
 function Header() {
    return (
-      <NavHeader>
+      <nav>
          <div className="container fx fx-rnw fx-jcsb fx-aic">
             <div className="brand">
                <a href="/">
@@ -23,20 +19,20 @@ function Header() {
             <div className="nav-menu fx fx-jcfe">
                <ul className="fx fx-aic">
                   <li>
-                     <a href="/">
+                     <a href="/" className="orange">
                         <FontAwesomeIcon icon={faBars} />
                         <span>Home</span>
                      </a>
                   </li>
                   <li>
-                     <a href="/">
+                     <a href="/" className="red">
                         <FontAwesomeIcon icon={faPodcast} />
                         <span>Me</span>
                      </a>
                   </li>
 
                   <li>
-                     <a href="/">
+                     <a href="/" className="blue">
                         <FontAwesomeIcon icon={faInbox} />
                         <span>Projects</span>
                      </a>
@@ -45,11 +41,17 @@ function Header() {
             </div>
             <div className="actions">
                <a href="/">
-                  <FontAwesomeIcon icon={faMortarPestle} />
+                  <FontAwesomeIcon className="twitter" icon={faTwitter} />
+               </a>
+               <a href="/">
+                  <FontAwesomeIcon className="github" icon={faGithub} />
+               </a>
+               <a href="/">
+                  <FontAwesomeIcon className="dev" icon={faDev} />
                </a>
             </div>
          </div>
-      </NavHeader>
+      </nav>
    );
 }
 
