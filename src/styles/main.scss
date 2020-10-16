@@ -7,12 +7,7 @@
 body {
    font-family: Poppins, Helvetica, Arial, sans-serif;
    margin: 0;
-   font-size: 16px;
-
-   // @media (max-width: 1006px) {
-   //    font-size: 2px;
-   //    background: orange;
-   // }
+   font-size: 1em;
 }
 
 ul {
@@ -24,7 +19,3 @@ ul {
 a {
    text-decoration: none;
 }
-
-
-@import "./global/global.scss";
-@import "./components/componenst.scss";
