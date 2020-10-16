@@ -19,20 +19,20 @@ function Header() {
             <div className="nav-menu fx fx-jcfe">
                <ul className="fx fx-aic">
                   <li>
-                     <a href="/">
+                     <a href="/" className="orange">
                         <FontAwesomeIcon icon={faBars} />
                         <span>Home</span>
                      </a>
                   </li>
                   <li>
-                     <a href="/">
+                     <a href="/" className="red">
                         <FontAwesomeIcon icon={faPodcast} />
                         <span>Me</span>
                      </a>
                   </li>
 
                   <li>
-                     <a href="/">
+                     <a href="/" className="blue">
                         <FontAwesomeIcon icon={faInbox} />
                         <span>Projects</span>
                      </a>

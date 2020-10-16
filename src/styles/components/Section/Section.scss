@@ -1,9 +1,9 @@
 section{
    &>div{
-      padding: 150px 0;
+      padding: 16em 0;
       .presentation{
          padding: 10px;
-         div{
+         &>div{
             position: relative;
             color: $textW;
             span{
@@ -16,13 +16,13 @@ section{
                font-size: 2.2rem;
                font-weight: 500;
             }
-
+            
             p{
                font-size: 2rem;
             }
-
+            
             .presentationIcons{
-               div{
+               &>div{
                   a{
                      cursor: pointer;
                      font-size: 2.5rem;

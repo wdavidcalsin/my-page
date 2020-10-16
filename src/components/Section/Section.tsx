@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import Img1 from '../../img/Frame-1.png';
 
 function Section() {
    return (
@@ -56,9 +57,10 @@ function Section() {
                </div>
             </div>
             <div className="video">
-               <video muted loop autoPlay>
+               {/* <video muted loop autoPlay>
                   <source src="https://jgthms.com/static/css-in-44-minutes-1216-6485e8900f47f0bcb096c3dc756f7917.mp4" />
-               </video>
+               </video> */}
+               <img src={Img1} alt="" />
             </div>
          </div>
       </section>

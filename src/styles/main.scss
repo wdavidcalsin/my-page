@@ -4,16 +4,21 @@
    box-sizing: border-box;
 }
 
+:root{
+   font-size: 16px;
+}
+
 body {
    font-family: Poppins, Helvetica, Arial, sans-serif;
    margin: 0;
    font-size: 16px;
 
-   // @media (max-width: 1006px) {
-   //    font-size: 2px;
-   //    background: orange;
-   // }
+   @media (max-width: 1006px) {
+      // font-size: 200px;
+      background: orange;
+   }
 }
+
 
 ul {
    margin: 0;

@@ -5,9 +5,9 @@ nav{
    background-color: white;
    z-index: 10;
 
-   .container{
+   &>.container{
       padding: 10px 0;
-      .brand{
+      &>.brand{
          a{
             color: $textW;
             text-decoration: none;
@@ -18,28 +18,47 @@ nav{
          }
       }
 
-      .nav-menu{
+      &>.nav-menu{
          ul{
             li{
-               a{
-                  padding: 10px 20px;
-                  margin: 0 5px;
+               &>a{
+                  padding: 10px 5px;
+                  margin: 0 20px;
                   font-size: 20px;;
                   color: $textW;
+                  position: relative;
                   svg{
                      display:none;
                   }
                   span{
                   }
+
+                  &:after {    
+                     content: "";
+                     background: none repeat scroll 0 0 transparent;
+                     bottom: 0;
+                     display: block;
+                     height: 2px;
+                     left: 50%;
+                     position: absolute;
+                     transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                     width: 0;
+                     background: orange;
+                     
+                   }
+                   &:hover:after { 
+                     width: 100%; 
+                     left: 0; 
+                   }
                }
             }
          }
       }
 
-      .actions{
-         a{
+      &>.actions{
+         &>a{
             font-size: 35px;
-            svg{
+            &>svg{
                margin: 0 5px;
                padding: 5px;
                &.github{
