@@ -4,10 +4,11 @@
    "private": true,
    "scripts": {
       "build": "react-scripts build",
+      "dev": "react-scripts start",
       "eject": "react-scripts eject",
+      "fetch": "sh ./scripts/fetch.sh",
       "format": "prettier --write ./**/*.{tsx,ts,json,js}",
       "lint": "eslint src/**/*.{tsx,ts,js,jsx}",
-      "dev": "react-scripts start",
       "test": "react-scripts test"
    },
    "husky": {
