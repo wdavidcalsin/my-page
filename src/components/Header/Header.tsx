@@ -1,12 +1,10 @@
 import { faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faBars, faInbox, faPodcast } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-// import './../../styles/components/Header/Header.scss';
 
 function Header() {
    return (
-      <nav>
+      <header className="header">
          <div className="container fx fx-rnw fx-jcsb fx-aic">
             <div className="brand">
                <a href="/">
@@ -20,21 +18,18 @@ function Header() {
                <ul className="fx fx-aic">
                   <li>
                      <a href="/" className="orange">
-                        <FontAwesomeIcon icon={faBars} />
-                        <span>Home</span>
+                        Home
                      </a>
                   </li>
                   <li>
                      <a href="/" className="red">
-                        <FontAwesomeIcon icon={faPodcast} />
-                        <span>Me</span>
+                        Me
                      </a>
                   </li>
 
                   <li>
                      <a href="/" className="blue">
-                        <FontAwesomeIcon icon={faInbox} />
-                        <span>Projects</span>
+                        Projects
                      </a>
                   </li>
                </ul>
@@ -51,7 +46,7 @@ function Header() {
                </a>
             </div>
          </div>
-      </nav>
+      </header>
    );
 }
 

@@ -1,24 +1,28 @@
+@import '~sass-colors';
+@import '~flexbox-fast/index.scss';
+@import '~bootstrap-container/index.scss';
+@import '~scroll-style/index.scss';
+
 *,
 *::before,
 *::after {
    box-sizing: border-box;
 }
 
-:root{
+:root {
    font-size: 16px;
 }
 
 body {
    font-family: Poppins, Helvetica, Arial, sans-serif;
    margin: 0;
-   font-size: 16px;
+   font-size: 1rem;
 
    @media (max-width: 1006px) {
       // font-size: 200px;
       background: orange;
    }
 }
-
 
 ul {
    margin: 0;
@@ -30,6 +34,5 @@ a {
    text-decoration: none;
 }
 
-
-@import "./global/global.scss";
-@import "./components/componenst.scss";
+@import './global/global.scss';
+@import './components/componenst.scss';

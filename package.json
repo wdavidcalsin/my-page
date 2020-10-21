@@ -64,7 +64,9 @@
       "flexbox-fast": "^1.0.0",
       "node-sass": "^4.14.1",
       "react": "^16.13.1",
-      "react-dom": "^16.13.1"
+      "react-dom": "^16.13.1",
+      "sass-colors": "^1.0.14",
+      "scroll-style": "^1.0.0"
    },
    "devDependencies": {
       "@testing-library/jest-dom": "^4.2.4",
