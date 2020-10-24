@@ -52,9 +52,13 @@ section{
       }
 
       .video{
-         video{
+         div{
             width: 500px;
-            border-radius: 5px;
+            
+            img{
+               width: 500px;
+               border-radius: 5px;
+            }
          }
       }
    }

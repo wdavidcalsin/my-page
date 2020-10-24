@@ -65,8 +65,10 @@
       "node-sass": "^4.14.1",
       "react": "^16.13.1",
       "react-dom": "^16.13.1",
+      "react-twitter-widgets": "^1.9.5",
       "sass-colors": "^1.0.14",
-      "scroll-style": "^1.0.0"
+      "scroll-style": "^1.0.0",
+      "use-slider": "^1.4.0"
    },
    "devDependencies": {
       "@testing-library/jest-dom": "^4.2.4",
@@ -83,7 +85,7 @@
       "prettier": "^2.1.2",
       "prettier-plugin-organize-imports": "^1.1.1",
       "prettier-plugin-packagejson": "^2.2.6",
-      "react-scripts": "3.4.3",
+      "react-scripts": "^3.4.4",
       "typescript": "^4.0.3"
    }
 }
