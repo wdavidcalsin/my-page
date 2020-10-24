@@ -1,47 +1,47 @@
-section{
-   &>div{
-      padding: 16em 0;
-      .presentation{
+section {
+   & > div {
+      padding: 7em 0;
+      .presentation {
          padding: 10px;
-         &>div{
+         & > div {
             position: relative;
             color: $textW;
-            span{
+            span {
                position: absolute;
                top: 0;
                left: -2.5rem;
                font-size: 2rem;
             }
-            h1{
+            h1 {
                font-size: 2.2rem;
                font-weight: 500;
             }
-            
-            p{
+
+            p {
                font-size: 2rem;
             }
-            
-            .presentationIcons{
-               &>div{
-                  a{
+
+            .presentationIcons {
+               & > div {
+                  a {
                      cursor: pointer;
                      font-size: 2.5rem;
-                     svg{
+                     svg {
                         margin: 0 5px;
                         padding: 5px;
-                        &.github{
+                        &.github {
                            color: black;
                         }
-                        &.medium{
+                        &.medium {
                            color: black;
                         }
-                        &.twitter{
+                        &.twitter {
                            color: rgb(23, 111, 211);
                         }
-                        &.dev{
+                        &.dev {
                            color: black;
                         }
-                        &.linkedin{
+                        &.linkedin {
                            color: #0e76a8;
                         }
                      }
@@ -51,11 +51,11 @@ section{
          }
       }
 
-      .video{
-         div{
+      .video {
+         div {
             width: 500px;
-            
-            img{
+
+            img {
                width: 500px;
                border-radius: 5px;
             }
