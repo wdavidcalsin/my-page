@@ -30,28 +30,28 @@ function Section() {
                   <div className="presentationIcons">
                      <div>
                         <Follow username="wdavidcalsin" />
-                        <a href="#">
+                        <a href="/">
                            <FontAwesomeIcon
                               className="github"
                               icon={faGithub}
                            />
                         </a>
-                        <a href="#">
+                        <a href="/">
                            <FontAwesomeIcon
                               className="twitter"
                               icon={faTwitter}
                            />
                         </a>
-                        <a href="#">
+                        <a href="/">
                            <FontAwesomeIcon
                               className="medium"
                               icon={faMedium}
                            />
                         </a>
-                        <a href="#">
+                        <a href="/">
                            <FontAwesomeIcon className="dev" icon={faDev} />
                         </a>
-                        <a href="#">
+                        <a href="/">
                            <FontAwesomeIcon
                               className="linkedin"
                               icon={faLinkedin}

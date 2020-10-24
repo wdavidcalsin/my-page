@@ -1,6 +1,7 @@
 import { faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
    return (
@@ -17,14 +18,10 @@ function Header() {
             <div className="nav-menu fx fx-jcfe">
                <ul className="fx fx-aic">
                   <li>
-                     <a href="/" className="orange">
-                        Home
-                     </a>
+                     <Link to="/">Heom</Link>
                   </li>
                   <li>
-                     <a href="/" className="red">
-                        Me
-                     </a>
+                     <Link to="/me">Me</Link>
                   </li>
 
                   <li>

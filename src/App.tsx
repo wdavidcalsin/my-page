@@ -1,14 +1,20 @@
 import React from 'react';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Section from './components/Section/Section';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { PageHome, PageMe } from './pages';
+
 function App() {
    return (
-      <div>
-         <Header />
-         <Section />
-         <Footer />
-      </div>
+      <BrowserRouter>
+         {/* Layout Index */}
+         <Switch>
+            <Route path="/" exact>
+               <PageHome />
+            </Route>
+            <Route path="/me">
+               <PageMe />
+            </Route>
+         </Switch>
+      </BrowserRouter>
    );
 }
 
