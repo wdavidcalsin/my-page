@@ -1,0 +1,18 @@
+footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+   font-weight: 500;
+   .fo-l{
+      color: rgba(0, 0, 0, 0.548);
+   }
+   
+   .fo-r{
+      a{
+         color: rgba(0, 0, 0, 0.548);
+         text-decoration: none;
+         padding: 0 10px;
+      }
+   }
+}

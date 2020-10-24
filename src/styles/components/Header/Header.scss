@@ -24,10 +24,13 @@
          ul li a {
             padding: 5px;
             margin: 0 5px;
-            color: $secondary;
+            // color: $secondary;
+            color: #414c5a;
             position: relative;
             transition: all 0.4s ease-in-out;
-
+            font-family: 'Quicksand',Arial,sans-serif !important;
+            font-weight: 600;
+            font-size: 19px;
             &:after {
                border-radius: 290486px;
                content: '';
@@ -57,9 +60,9 @@
 
       .actions {
          a {
-            font-size: 27px;
+            font-size: 20px;
             svg {
-               margin: 0 5px;
+               margin: 0 6px;
                &.github {
                   color: black;
                }
