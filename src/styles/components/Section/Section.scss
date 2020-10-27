@@ -1,6 +1,7 @@
 section {
    & > div {
       padding: 7em 0;
+      
       .presentation {
          padding: 10px;
          & > div {
@@ -58,6 +59,7 @@ section {
             img {
                width: 500px;
                border-radius: 5px;
+               display: block;
             }
          }
       }
