@@ -1,19 +1,9 @@
 import { faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
-   const [showScroll, setShowScroll] = useState(false);
-   const checkScrollTop = () => {
-      if (!showScroll && window.pageYOffset > 400) {
-         setShowScroll(true);
-      } else if (showScroll && window.pageYOffset <= 400) {
-         setShowScroll(false);
-      }
-   };
-   window.addEventListener('scroll', checkScrollTop);
-
    return (
       <header className="header">
          <div className="container fx fx-rnw fx-jcsb fx-aic">
@@ -28,7 +18,7 @@ function Header() {
             <div className="nav-menu fx fx-jcfe">
                <ul className="fx fx-aic">
                   <li>
-                     <Link to="/">Home</Link>
+                     <Link to="/">Heom</Link>
                   </li>
                   <li>
                      <Link to="/me">Me</Link>
