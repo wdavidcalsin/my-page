@@ -13,8 +13,19 @@ const PageMe: FC = () => {
                   <div className="nickName">
                      <span>@wdavidcalsin</span>
                   </div>
-                  <div className="cuntry">
+                  <div className="country">
                      <span>Puno Peru</span>
+                     <svg viewBox="0 0 512 342">
+                        <path d="M512 0H0V341.326H512V0Z" fill="#F0F0F0"></path>
+                        <path
+                           d="M170.663 0H0V341.337H170.663V0Z"
+                           fill="#D80027"
+                        ></path>
+                        <path
+                           d="M512 0H341.337V341.337H512V0Z"
+                           fill="#D80027"
+                        ></path>
+                     </svg>
                   </div>
                </div>
                <div className="contentMe">

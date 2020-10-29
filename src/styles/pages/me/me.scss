@@ -2,16 +2,24 @@
 .AboutMe{
    // background-color: orange;
    padding: 150px 0;
+   width: 100%;
    &>div{
       // border: 1px solid rgb(10, 110, 224);
-      box-shadow: 0px 0px 15px 1px rgba(61, 61, 61, 0.08);
+      // box-shadow: 0px 0px 15px 1px rgba(61, 61, 61, 0.08);
+      background-image: url(../../../img/MeFondo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 5px;
       padding: 50px 50px;
       // background: rgb(10, 110, 224);
       // color: white;
       .perfilMe{
          margin-top: -15%;
-         background-color: rgb(20, 118, 230);
+         // background-color: rgb(49, 138, 240);
+         background-image: url(../../../img/profileFondo.png);
+         background-repeat: no-repeat;
+         background-size: cover;   
+         background-position: center;
          color: white;
          text-align: center;
          padding: 30px 20px;
@@ -26,18 +34,28 @@
 
          h2{
             font-weight: 500;
-            // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin: 0;
             padding: 10px 0;
+         }
+
+         .country{
+            svg{
+               display: block;
+               height: 100%;
+               width: 25px;   
+               text-align: center;
+               margin: auto;
+            }
          }
 
       }
       .contentMe{
                p{
-                  color: #454545;
+                  // font-weight: 300;
+                  color: #4e4e4e;
                   // font-family:  Helvetica Neue,Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
                   // font-weight: 300;
-                  font-size: 1.2em;
+                  font-size: 1.1em;
                }
       }
    }
