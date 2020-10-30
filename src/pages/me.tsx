@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import Skils from '../components/Skils/Index';
 import ImgProfile from '../img/profile.jpg';
 import LayoutIndex from '../layouts';
 
@@ -59,6 +60,7 @@ const PageMe: FC = () => {
                      consistente, haré realidad tus ideas.
                   </p>
                </div>
+               <Skils />
             </div>
          </div>
       </LayoutIndex>
