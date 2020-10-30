@@ -1,7 +1,16 @@
 section {
+   // background: orange;
+   background-image: url(../../../img/fondoSection.png);
+   background-repeat: no-repeat;
+   background-size: cover;   
+   background-position: center;
    & > div {
-      padding: 7em 0;
-      
+      padding: 8em 0;
+      @media (max-width: 1000px) {
+         padding: 4em 0;
+         flex-direction: column !important;
+         // background-color: orange;
+      }
       .presentation {
          padding: 10px;
          & > div {
@@ -16,14 +25,20 @@ section {
             h1 {
                font-size: 2.2rem;
                font-weight: 500;
+               color: rgb(63, 74, 78);
             }
 
             p {
                font-size: 2rem;
+               color: rgb(75, 77, 78);
             }
 
             .presentationIcons {
                & > div {
+                  @media (max-width: 570px) {
+                     text-align: center;
+                     // background-color: orange;
+                  }
                   a {
                      cursor: pointer;
                      font-size: 2.5rem;
@@ -53,13 +68,20 @@ section {
       }
 
       .video {
-         div {
+         &>div {
             width: 500px;
+            border: 2px dashed rgb(169, 169, 169);
+            border-radius: 5px;
+
+            @media (max-width: 500px) {
+               width: 100%;
+            }
 
             img {
-               width: 500px;
                border-radius: 5px;
+               width: 500px;
                display: block;
+               
             }
          }
       }
