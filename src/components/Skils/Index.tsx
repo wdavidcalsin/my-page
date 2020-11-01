@@ -1,27 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import tasks from '../../api/data.json';
 import imgSkilsList from '../../img/itemSkils.png';
 
 function Skils() {
+   const [state] = useState(tasks);
    return (
       <div className="skils">
          <h2>
             HABILIDADES DOMINADAS <span>(SKILLS)</span>
          </h2>
-         <div className="listSkils">
-            <div className="titSkils">
-               <img src={imgSkilsList} alt="" />
-               <h3>Maquetacion pagina web</h3>
-            </div>
-            <div className="itemSkils fx">
-               <h3>Pug / Jade</h3>
-               <div className="barra">
-                  <div className="barraColor"></div>
+
+         {state.map((index: any) => (
+            <div className="listSkils">
+               <div className="titSkils">
+                  <img src={imgSkilsList} alt="" />
+                  <h3>{index.titulo}</h3>
                </div>
-               <div className="barraContent">
-                  <span>100</span>
-               </div>
+               {index.list.map((index2: any) => (
+                  <div className="itemSkils fx">
+                     <h3>{index2.nombre}</h3>
+                     <div className="barra">
+                        <div className="barraColor">
+                           <div
+                              className={
+                                 'porcentajeColor ' +
+                                 'porcen' +
+                                 index2.porcentaje
+                              }
+                           ></div>
+                        </div>
+                     </div>
+                     <div className="barraContent">
+                        <span>{index2.porcentaje}</span>
+                     </div>
+                  </div>
+               ))}
             </div>
-         </div>
+         ))}
       </div>
    );
 }
