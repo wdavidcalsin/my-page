@@ -4,21 +4,24 @@
    "private": true,
    "scripts": {
       "build": "react-scripts build",
+      "clean": "rimraf build",
       "dev": "react-scripts start",
       "eject": "react-scripts eject",
       "fetch": "sh ./scripts/fetch.sh",
       "format": "prettier --write ./**/*.{tsx,ts,json,js}",
       "lint": "eslint src/**/*.{tsx,ts,js,jsx}",
-      "test": "react-scripts test"
+      "test": "react-scripts test",
+      "type-check": "tsc --pretty --noEmit"
    },
    "husky": {
       "hooks": {
-         "pre-commit": "lint-staged"
+         "pre-commit": "lint-staged",
+         "pre-push": "npm run type-check"
       }
    },
    "lint-staged": {
       "*.{tsx,ts,jsx,js}": [
-         "eslint --fix"
+         "eslint . --fix"
       ]
    },
    "browserslist": {
