@@ -1,14 +1,19 @@
 .skils{
    width: 100%;
    padding: 0 60px;
+
+   @media (max-width: 1000px) {
+      padding: 0px;
+   }
+   
    h2{
       text-align: center;
    }
    .listSkils{
+      padding: 2rem 0;
       .titSkils{
          img{
             display: inline;
-            // padding: 0px 15px;
             width: 15px;
          }
          &>h3{
@@ -20,6 +25,7 @@
       }
 
       .itemSkils{
+         padding: 0.5rem 0 ;
          h3{
             flex: 1;
             margin: 0;
@@ -41,14 +47,46 @@
                height: 30%;
                overflow: hidden;
 
-               &::after{
-                  content: "";
-                  width: 50%;
+               @media (max-width: 1000px) {
+                  height: 6px;
+               }
+
+               .porcentajeColor{
+                  
                   display: block;
                   background: rgb(55, 204, 237);
                   height: 100%;
                   border-radius: 30px;
-
+                  &.porcen10{
+                     width: 10%;
+                  }
+                  &.porcen20{
+                     width: 20%;
+                  }
+                  &.porcen30{
+                     width: 30%;
+                  }
+                  &.porcen40{
+                     width: 40%;
+                  }
+                  &.porcen50{
+                     width: 50%;
+                  }
+                  &.porcen60{
+                     width: 60%;
+                  }
+                  &.porcen70{
+                     width: 70%;
+                  }
+                  &.porcen80{
+                     width: 80%;
+                  }
+                  &.porcen90{
+                     width: 90%;
+                  }
+                  &.porcen100{
+                     width: 100%;
+                  }
                }
             }
          }

@@ -10,7 +10,6 @@ function Footer() {
          </div>
          <div className="fo-r">
             <a href="/">Terms</a>
-            <a href="/">Privacy</a>
             <a href="/">Help</a>
             <a href="/">Contacts</a>
          </div>
