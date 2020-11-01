@@ -1,0 +1,94 @@
+[
+   {
+      "titulo": "Maquetacion pagina web",
+      "list": [
+         {
+            "nombre": "Pug",
+            "porcentaje": 90
+         },
+         {
+            "nombre": "Html",
+            "porcentaje": 100
+         },
+         {
+            "nombre": "Jade",
+            "porcentaje": 70
+         }
+      ]
+   },
+   {
+      "titulo": "Diseno",
+      "list": [
+         {
+            "nombre": "CSS3",
+            "porcentaje": 100
+         },
+         {
+            "nombre": "Sass / Scss",
+            "porcentaje": 100
+         },
+         {
+            "nombre": "Ant Design",
+            "porcentaje": 80
+         },
+         {
+            "nombre": "Boostrap 4",
+            "porcentaje": 70
+         },
+         {
+            "nombre": "Figma",
+            "porcentaje": 90
+         }
+      ]
+   },
+   {
+      "titulo": "Lenguajes",
+      "list": [
+         {
+            "nombre": "Javascript",
+            "porcentaje": 90
+         },
+         {
+            "nombre": "Typescript",
+            "porcentaje": 90
+         },
+         {
+            "nombre": "Nodejs",
+            "porcentaje": 80
+         },
+         {
+            "nombre": "Sql",
+            "porcentaje": 80
+         },
+         {
+            "nombre": "Php",
+            "porcentaje": 70
+         }
+      ]
+   },
+   {
+      "titulo": "Librerias",
+      "list": [
+         {
+            "nombre": "React",
+            "porcentaje": 100
+         },
+         {
+            "nombre": "Nextjs",
+            "porcentaje": 90
+         },
+         {
+            "nombre": "Redux",
+            "porcentaje": 80
+         },
+         {
+            "nombre": "ApolloClient",
+            "porcentaje": 90
+         },
+         {
+            "nombre": "Vuejs",
+            "porcentaje": 40
+         }
+      ]
+   }
+]
