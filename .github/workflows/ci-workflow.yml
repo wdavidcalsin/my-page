@@ -16,8 +16,17 @@ jobs:
            with:
               node-version: 12.x
 
-         - name: Install dependencies
-           run: npm ci
+         - name: Cache node modules
+           id: node-modules
+           uses: actions/cache@v2
+           with:
+              path: node_modules
+              key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+              restore-keys: |
+                 ${{ runner.os }}-node-
+
+         - if: steps.node-modules.outputs.cache-hit != 'true'
+           run: npm i
 
          - name: eslint / tslint
-           run: yarn lint
+           run: npm run lint
