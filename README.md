@@ -14,7 +14,7 @@ To prepare and start your dev enviroment
 
 ### Team
 
-Anyone in Wdavid Calsin can contribute ❤️
+Anyone in this project can contribute ❤️
 
 **Lead Maintainers:**
 
