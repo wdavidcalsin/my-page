@@ -4,18 +4,29 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
-   const [showScroll, setShowScroll] = useState(false);
-   const checkScrollTop = () => {
-      if (!showScroll && window.pageYOffset > 400) {
-         setShowScroll(true);
-      } else if (showScroll && window.pageYOffset <= 400) {
-         setShowScroll(false);
+   let [state, setState] = useState(0);
+
+   const handleAnimation = () => {
+      let header = document.querySelector('.header') as HTMLElement;
+
+      setState(document.documentElement.scrollTop);
+
+      state = document.documentElement.scrollTop;
+
+      if (state > 60) {
+         header.style.fontSize = '14px';
+         header.style.boxShadow = '0 0 30px -7px #eeeeee';
+      } else {
+         header.style.fontSize = '16px';
+         header.style.boxShadow = 'none';
       }
    };
-   window.addEventListener('scroll', checkScrollTop);
 
    return (
-      <header className="header">
+      <header
+         {...(window.onscroll = () => handleAnimation())}
+         className="header"
+      >
          <div className="container fx fx-rnw fx-jcsb fx-aic">
             <div className="brand">
                <a href="/">
