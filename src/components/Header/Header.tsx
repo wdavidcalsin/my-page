@@ -1,21 +1,34 @@
 import { faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import clsx from 'clsx';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
-   const [showScroll, setShowScroll] = useState(false);
-   const checkScrollTop = () => {
-      if (!showScroll && window.pageYOffset > 400) {
-         setShowScroll(true);
-      } else if (showScroll && window.pageYOffset <= 400) {
-         setShowScroll(false);
+   const [scrolled, setScrolled] = useState(false);
+
+   useEffect(() => {
+      window.addEventListener('scroll', onScroll);
+
+      return () => {
+         window.removeEventListener('scroll', onScroll);
+      };
+   }, []);
+
+   const onScroll = () => {
+      if (window.scrollY > 20) {
+         setScrolled(true);
+      } else {
+         setScrolled(false);
       }
    };
-   window.addEventListener('scroll', checkScrollTop);
 
    return (
-      <header className="header">
+      <header
+         className={clsx('header', {
+            scrolled,
+         })}
+      >
          <div className="container fx fx-rnw fx-jcsb fx-aic">
             <div className="brand">
                <a href="/">
