@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
-   let [scrolled, setScrolled] = useState(false);
+   const [scrolled, setScrolled] = useState(false);
 
    useEffect(() => {
       window.addEventListener('scroll', onScroll);
