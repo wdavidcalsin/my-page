@@ -1,31 +1,33 @@
 import { faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import clsx from 'clsx';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
-   let [state, setState] = useState(0);
+   let [scrolled, setScrolled] = useState(false);
 
-   const handleAnimation = () => {
-      let header = document.querySelector('.header') as HTMLElement;
+   useEffect(() => {
+      window.addEventListener('scroll', onScroll);
 
-      setState(document.documentElement.scrollTop);
+      return () => {
+         window.removeEventListener('scroll', onScroll);
+      };
+   }, []);
 
-      state = document.documentElement.scrollTop;
-
-      if (state > 60) {
-         header.style.fontSize = '14px';
-         header.style.boxShadow = '0 0 30px -7px #eeeeee';
+   const onScroll = () => {
+      if (window.scrollY > 20) {
+         setScrolled(true);
       } else {
-         header.style.fontSize = '16px';
-         header.style.boxShadow = 'none';
+         setScrolled(false);
       }
    };
 
    return (
       <header
-         {...(window.onscroll = () => handleAnimation())}
-         className="header"
+         className={clsx('header', {
+            scrolled,
+         })}
       >
          <div className="container fx fx-rnw fx-jcsb fx-aic">
             <div className="brand">
