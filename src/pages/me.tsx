@@ -31,33 +31,33 @@ const PageMe: FC = () => {
                </div>
                <div className="contentMe">
                   <p>
-                     Hola, soy Willian David, un autodidacta, diseñador de
-                     JavaScript con pasión por el diseño de movimiento.
-                     Actualmente vivo en Puno, Peru. Soy un geek absoluto y me
-                     encanta hacer geeks en todo lo relacionado con Linux y
-                     JavaScript.
+                     Hello, I am William David, a self-taught and freelancer,
+                     Fron-end engenier with JavaScript and Typesctipt, with a
+                     passion for movement. I currently live in Puno, Peru. I am
+                     a geek absolute and I love geeking out on everything
+                     related with Linux and Typescript.
                   </p>
                   <p>
-                     Me enamoré por primera vez del diseño web hace 2 años.
-                     Desde entonces he estado enganchado. Aunque mi enfoque por
-                     ahora es fuertemente en el desarrollo web tanto en el
-                     frontend como en el backend. Mi pila de desarrollo favorita
-                     en este momento es React, Typescript, GrahpQL, Node,
-                     MongoDB y Linux.
+                     I first fell in love with web design a year and a half ago.
+                     I've been hooked ever since. Although my approach to is now
+                     heavily involved in the development of the website both in
+                     the in the front as well as in the back. My favorite
+                     development pile at this time is React, Typescript,
+                     GrahpQL, Node, Nestjs, MongoDB, MySql and Linux.
                   </p>
                   <p>
-                     Los valores que tengo son la lealtad, la fiabilidad, la
-                     autenticidad y ayudar a otros a alcanzar el éxito. Es por
-                     eso que veo los proyectos hasta el final y por lo que creo
-                     en no sólo crear un software hermoso, sino también fiable y
-                     que refleje la marca del cliente y que sea fácil de usar de
-                     manera que no distraiga la experiencia del usuario.
+                     The values I have are loyalty, reliability, humility,
+                     sicerity, the authenticity. That's why I do many projects
+                     and that's why that I believe not only in creating
+                     beautiful software, but also reliable and reflecting the
+                     customer's brand and easy to use in a way that does not
+                     distract from user.
                   </p>
                   <p>
-                     Ya sea creando servidores en Node, conectando a las bases
-                     de datos de MongoDB o diseñando experiencias de usuario
-                     únicas por dispositivo manteniendo una experiencia de marca
-                     consistente, haré realidad tus ideas.
+                     I also like the backend that creates servers at Node,
+                     connecting to MongoDB databases or designing unique user
+                     experiences per device while maintaining a consistent brand
+                     experience.
                   </p>
                </div>
                <Skils />
