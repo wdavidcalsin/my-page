@@ -1,6 +1,6 @@
 [
    {
-      "titulo": "Maquetacion pagina web",
+      "titulo": "Web page layout",
       "list": [
          {
             "nombre": "Pug",
@@ -17,7 +17,7 @@
       ]
    },
    {
-      "titulo": "Diseno",
+      "titulo": "Design",
       "list": [
          {
             "nombre": "CSS3",
@@ -42,15 +42,15 @@
       ]
    },
    {
-      "titulo": "Lenguajes",
+      "titulo": "Languages",
       "list": [
          {
             "nombre": "Javascript",
-            "porcentaje": 90
+            "porcentaje": 100
          },
          {
             "nombre": "Typescript",
-            "porcentaje": 90
+            "porcentaje": 100
          },
          {
             "nombre": "Nodejs",

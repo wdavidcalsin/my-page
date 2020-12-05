@@ -8,7 +8,7 @@ function Skils() {
    return (
       <div className="skils">
          <h2>
-            HABILIDADES DOMINADAS <span>(SKILLS)</span>
+            MASTERED SKILLS <span>(SKILLS)</span>
          </h2>
 
          {state.map((index: any) => (

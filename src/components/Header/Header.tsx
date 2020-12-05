@@ -55,10 +55,18 @@ function Header() {
                </ul>
             </div>
             <div className="actions">
-               <a href="/">
+               <a
+                  href="https://twitter.com/wdavidcalsin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
                   <FontAwesomeIcon className="twitter" icon={faTwitter} />
                </a>
-               <a href="/">
+               <a
+                  href="https://github.com/wdavidcalsin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
                   <FontAwesomeIcon className="github" icon={faGithub} />
                </a>
                <a href="/">
