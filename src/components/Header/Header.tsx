@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
    const [showScroll, setShowScroll] = useState(false);
+
    const checkScrollTop = () => {
       if (!showScroll && window.pageYOffset > 400) {
          setShowScroll(true);
@@ -12,6 +13,7 @@ function Header() {
          setShowScroll(false);
       }
    };
+
    window.addEventListener('scroll', checkScrollTop);
 
    return (
@@ -42,10 +44,18 @@ function Header() {
                </ul>
             </div>
             <div className="actions">
-               <a href="/">
+               <a
+                  href="https://twitter.com/wdavidcalsin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
                   <FontAwesomeIcon className="twitter" icon={faTwitter} />
                </a>
-               <a href="/">
+               <a
+                  href="https://github.com/wdavidcalsin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
                   <FontAwesomeIcon className="github" icon={faGithub} />
                </a>
                <a href="/">
