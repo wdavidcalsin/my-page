@@ -2,7 +2,7 @@ section {
    // background: orange;
    background-image: url(../../../img/fondoSection.png);
    background-repeat: no-repeat;
-   background-size: cover;   
+   background-size: cover;
    background-position: center;
    & > div {
       padding: 8em 0;
@@ -23,14 +23,15 @@ section {
                font-size: 2rem;
             }
             h1 {
-               font-size: 2.2rem;
+               font-size: 2.1rem;
                font-weight: 500;
                color: rgb(63, 74, 78);
             }
 
             p {
-               font-size: 2rem;
+               font-size: 1.4rem;
                color: rgb(75, 77, 78);
+               line-height: 1.6;
             }
 
             .presentationIcons {
@@ -68,7 +69,7 @@ section {
       }
 
       .video {
-         &>div {
+         & > div {
             width: 500px;
             border: 2px dashed rgba(169, 169, 169, 0.3);
             border-radius: 5px;
@@ -81,7 +82,6 @@ section {
                border-radius: 5px;
                width: 500px;
                display: block;
-               
             }
          }
       }

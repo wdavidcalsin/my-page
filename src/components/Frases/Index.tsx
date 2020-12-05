@@ -5,6 +5,7 @@ import ImgJobs from '../../img/fraseJobs1.png';
 function Frases() {
    return (
       <div className="FrasesContent">
+         <h2 className="title-frase">Motivation Phrases</h2>
          <div className="container">
             <div className="itemFrase">
                <div className="img-frase">
@@ -15,7 +16,8 @@ function Frases() {
                </div>
                <div className="content-frase">
                   <p>
-                     Si tu negocio no está en Internet, tu negocio no existe.
+                     If your business is not on the Internet, your business does
+                     not exist.
                   </p>
                   <span>@Bill Gates</span>
                </div>
@@ -25,7 +27,7 @@ function Frases() {
                   <img src={ImgJobs} alt="" />
                </div>
                <div className="content-frase">
-                  <p>El diseño es el alma de todo lo creado por el hombre.</p>
+                  <p>Design is the soul of everything created by man.</p>
                   <span>@Steve Jobs</span>
                </div>
             </div>
@@ -35,8 +37,8 @@ function Frases() {
                </div>
                <div className="content-frase">
                   <p>
-                     Que algo no haya salido como hayas querido no significa que
-                     sea inútil.
+                     Just because something didn't turn out the way you wanted
+                     it to doesn't mean it's useless.
                   </p>
                   <span>@Thomas Edison</span>
                </div>
