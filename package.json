@@ -7,7 +7,7 @@
       "clean": "rimraf build",
       "dev": "react-scripts start",
       "eject": "react-scripts eject",
-      "fetch": "sh ./scripts/fetch.sh",
+      "fetch": "sh ./scripts/git-fetch.sh",
       "format": "prettier --write ./**/*.{tsx,ts,json,js}",
       "lint": "eslint src/**/*.{tsx,ts,js,jsx}",
       "test": "react-scripts test",
