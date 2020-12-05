@@ -22,11 +22,10 @@ function Section() {
                   </span>
                   <h1>Hey, I`m Willian David Calsin</h1>
                   <p>
-                     I'm a front-end engineer and a full-stack developer since I
+                     I'm a front-end engineer and a full-stack developer and, I
                      love the Typescript language and as a library I like React,
-                     to develop the backend I use Nodejs and its Nestjs
-                     framework I love it, at the same time I'm a fan of open
-                     source, I like to share what I learn.
+                     to develop backend I use Nestjs, at the same time I'm a fan
+                     of open source, I like to share what I learn.
                   </p>
                   <div className="presentationIcons">
                      <div>

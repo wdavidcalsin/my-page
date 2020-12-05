@@ -15,7 +15,7 @@ const PageMe: FC = () => {
                      <span>@wdavidcalsin</span>
                   </div>
                   <div className="country">
-                     <span>Puno Peru</span>
+                     <span>Peru</span>
                      <svg viewBox="0 0 512 342">
                         <path d="M512 0H0V341.326H512V0Z" fill="#F0F0F0"></path>
                         <path
