@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { PageHome, PageMe } from './pages';
+import { PageHome, PageMe, Projetcs } from './pages';
 
 function App() {
    return (
@@ -12,6 +12,9 @@ function App() {
             </Route>
             <Route path="/me">
                <PageMe />
+            </Route>
+            <Route path="/projects">
+               <Projetcs />
             </Route>
          </Switch>
       </BrowserRouter>
