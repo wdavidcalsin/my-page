@@ -48,9 +48,9 @@ function Header() {
                   </li>
 
                   <li>
-                     <a href="/" className="blue">
+                     <Link to="/projects" className="blue">
                         Projects
-                     </a>
+                     </Link>
                   </li>
                </ul>
             </div>
