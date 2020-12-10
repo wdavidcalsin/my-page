@@ -1,0 +1,40 @@
+.card {
+   margin: 20px;
+   // background-color: orange;
+   border-radius: 5px;
+   border: 1px solid rgba(154, 159, 161, 0.2);
+   overflow: hidden;
+
+   .img-card {
+      width: 500px;
+
+      @media (max-width: 600px) {
+         width: auto;
+      }
+
+      img {
+         // border-radius: 10px;
+         overflow: hidden;
+         border: none;
+         width: 100%;
+         display: block;
+      }
+   }
+
+   .link-item-project {
+      h2 {
+         border-top: 1px solid rgba(154, 159, 161, 0.2);
+         width: 100%;
+         padding: 15px 0;
+         background-color: rgba(240, 240, 240, 0.39);
+         margin: 0;
+         text-align: center;
+         color: rgb(67, 69, 70);
+         font-weight: 400;
+
+         @media (max-width: 600px) {
+            font-size: auto;
+         }
+      }
+   }
+}

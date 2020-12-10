@@ -1,0 +1,18 @@
+.projects {
+   & > div {
+      .page-title {
+         text-align: center;
+         width: 100%;
+         background: rgba(0, 0, 0, 0.01);
+         padding: 20px 0;
+         font-weight: 400;
+         color: rgb(50, 50, 51);
+      }
+
+      .cards {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: center;
+      }
+   }
+}
