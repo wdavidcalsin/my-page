@@ -68,7 +68,7 @@
       "flexbox-fast": "^1.0.0",
       "lodash": "^4.17.20",
       "node-sass": "^4.14.1",
-      "react": "^16.13.1",
+      "react": "^16.14.0",
       "react-dom": "^16.13.1",
       "react-iframe": "^1.8.0",
       "react-router-dom": "^5.2.0",
