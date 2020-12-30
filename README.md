@@ -2,7 +2,7 @@
 
 Node.js v14.12.0 LTS & NPM v6.x
 
-> You can use [nvm-sh](https://github.com/nvm-sh/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
+
 
 ### Quick start
 
@@ -14,7 +14,7 @@ To prepare and start your dev enviroment
 
 ### Team
 
-Anyone in this project can contribute ❤️
+Anyone in this project can contribute 
 
 **Lead Maintainers:**
 
